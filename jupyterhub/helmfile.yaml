@@ -1,0 +1,11 @@
+repositories:
+  - name: juypterhub
+    url: https://jupyterhub.github.io/helm-chart/
+
+releases:
+  - name: jupyterhub
+    namespace: jupyterhub
+    chart: jupyterhub/jupyterhub
+    version: 3.3.7
+
+# kubectl port-forward -n jupyterhub service/proxy-public 8080:80
